@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #223;
+}
+h1{
+    text-align: center;
+    color: #ccc;
+}
+h4{
+    text-align:center;
+    color: #ccc;
+}
+button{
+    width:70px;
+    height:50px;
+    background: #be3144;
+    color:#ccc;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+#game{
+    width:500px;
+    height:300px;
+    border:10px inset white;
+    margin:auto;
+    margin-top:100px;
+    background: radial-gradient(closest-corner circle at 20% 20%,
+    #ccc,
+    #ccc 20%,
+    #445 21%,
+    #223 100%);
+    
+}
+.ground{
+    width: 500px;
+    height:10px;
+    background-color:green;
+    position:relative;
+    top:240px;
+    z-index: 1;
+   
+}.cloud{
+    width:15px;
+    height: 7px;
+    background-color:#ccc;
+    border-radius:50%;
+    position:relative;
+    top:120px;
+    left:470px;
+    animation: block 30s linear infinite;
+}
+.cloud2{
+    width:15px;
+    height: 7px;
+    background-color:#ccc;
+    border-radius:50%;
+    position:relative;
+    top:100px;
+    left:470px;
+    animation: block 20s linear infinite;
+}
+.cloud-left{
+    width:15px;
+    height: 7px;
+    background-color:#ccc;
+    border-radius:50%;
+    position:relative;
+    top:0px;
+    left:90%; 
+}
+.cloud-right{  
+    width:15px;
+    height: 7px;
+    background-color:#ccc;
+    border-radius:50%;
+    position:relative;
+    top:-10px;
+    left:50%;}
+#dino{
+    width: 20px;
+    height:20px;
+    background-color:rgb(85, 84, 84);
+    position:relative;
+    top:200px;
+    left:25px;
+    z-index: 2;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:4px;
+}
+.head{
+    width:20px;
+    height:15px;
+    background-color:rgb(85, 84, 84);
+    position: relative;
+    top:-10px;
+    right:-20px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.eye{
+    width:5px;
+    height: 5px;
+    background-color:#ccc;
+    border-radius:50%;
+    position:relative;
+    top:1px;
+    left:4px;
+}
+.teeth{
+    width:12px;
+    height: 3px;
+    background-color:#ccc;
+    position: relative;
+    top:4px;
+    left:6px;
+    /* border-top-left-radius:15px; */
+    border-bottom-left-radius:50%;
+}
+.tail{
+    width:20px;
+    height:4.5px;
+    background-color: rgb(85, 84, 84);
+    border-top-left-radius:5px;
+    position: relative;
+    bottom: 17px;
+    left:-15px;
+    transform:rotate(35deg);
+}
+.tail-end{
+    width:10px;
+    height: 6px;
+    background-color:#223;
+    border-radius:50% 0%;
+    position:relative;
+    bottom:2px;
+    left:-1px;    
+}
+.legr{
+    width:3px;
+    height:10px;
+    background-color: rgb(85, 84, 84);
+    animation: run2 0.1s linear infinite;
+    position: relative;
+    bottom:10px;
+}
+.legl{
+    width:3px;
+    height:10px;
+    background-color: rgb(85, 84, 84);
+    position: relative;
+    left:10px;
+    bottom: 5px;
+    animation: run 0.1s linear infinite;
+}
+.arm{
+    width:12px;
+    height: 3px;
+    background-color:rgb(85, 84, 84);
+    position: relative;
+    bottom:30px;
+    left:15px;
+    transform:rotate(35deg);
+}
+.hand{
+    width:5px;
+    height: 5px;
+    background-color:#223;
+    border-radius:50%;
+    position:relative;
+    top:1px;
+    left:6px;
+}
+.animation{
+    animation: jump 1s linear ;
+}
+.animation2{
+    animation: block 2s linear infinite;
+}
+
+#block{
+    width:10px;
+    height:40px;
+    background-color:brown;
+    position:relative;
+    top:175px;
+    left:490px;
+    z-index:2;
+    
+}
+#tree{
+    width:30px;
+    height:15px;
+    background-color: green;
+    position: relative;
+    left:-90%;
+    border-radius:30%;
+}
+.block2{
+    width:10px;
+    height:40px;
+    background-color:brown;
+    position:relative;
+    top:135px;
+    left:50px;
+    z-index:2;
+}
+.tree2{
+    width:30px;
+    height:15px;
+    background-color: green;
+    position: relative;
+    left:-90%;
+    border-radius:30%;
+}
+@keyframes jump{
+    0%{
+        top:201px;
+    }
+    30%{
+       top:150px;
+    }
+    70%{
+        top:150px;
+    }
+    100%{
+       top:201px;
+    }
+}
+@keyframes block{
+  0%{
+    left:490px;
+  }
+  100%{
+    left:-10px;
+  }
+
+}
+@keyframes run{
+ 
+    0%{
+        top:-5px;
+    }
+    100%{
+        top:5px;
+    }
+
+}
+@keyframes run2{
+    0%{
+        top:-5px;
+    }
+    100%{
+        top:-15px;
+    }   
+}
